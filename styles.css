@@ -1,0 +1,33 @@
+@font-face {
+    font-family: "SpiderMan";
+    src: url("fonts/The Amazing Spider-Man.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    background-color: brown;
+    opacity: 0.8;
+    margin: 20px;
+    padding: 10px;
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+    DISPLAY: flex;
+    flex-direction: column;
+    ALIGN-ITEMS: center;
+    POSITION: relative;
+
+
+}
+h1 {
+    color: blue;
+}
+p {
+    color: red;
+}
+.dark-theme{
+    background-color: black;
+    color: white;
+    font-family: "SpiderMan", sans-serif;
+}
