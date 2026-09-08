@@ -5,29 +5,64 @@
     font-style: normal;
 }
 body {
-    background-color: brown;
-    opacity: 0.8;
-    margin: 20px;
-    padding: 10px;
-    padding-top: 50px;
-    padding-right: 30px;
-    padding-bottom: 50px;
-    padding-left: 80px;
+    background-image: url("images (9).jpg");
+    opacity: 1.8;
+    margin: 50px;
+    padding: 100px;
     DISPLAY: flex;
     flex-direction: column;
     ALIGN-ITEMS: center;
     POSITION: relative;
-
+}
+.spiderman-corner {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 180px;
+    height: auto; 
+    z-index: 1000; 
 
 }
 h1 {
     color: blue;
 }
 p {
-    color: red;
+    color: white;
+}
+.space {
+    margin-top: 20px;
+    text-align: center;
+    background-color: red;
+    color: white;
 }
 .dark-theme{
     background-color: black;
     color: white;
     font-family: "SpiderMan", sans-serif;
+}
+.episodes {
+    display: flex;
+    flex-direction: column;
+}
+
+.episode {
+    min-width: max-content;
+    margin-bottom: .8rem;
+    padding: .8rem 1rem;
+    border-radius: 10px;
+    border: 0;
+    background: #191414;
+    color: #fff;
+    cursor: pointer;
+}
+
+.episode:hover {
+    background: #1Db954;
+}
+
+@media screen and (min-width: 860px) {
+    body {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;}
 }

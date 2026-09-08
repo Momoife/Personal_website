@@ -20,6 +20,49 @@
         <p>I’m someone who loves being creative, learning new things, and turning random ideas into actual projects. </p>
         <p>when i feel like it..</p>
         <p> im currently learning Gd script and web development.</p>
+        <p>and i love fried rice</p>
+
     </div>
+<div class="space">
+    <a href="about.html">About me 😊</a>
+
+</div>
+<html lang="en">
+<head>
+  <title>A Spotify Embed Example</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    #embed-iframe {
+      width: 100%;
+      height: 160px;
+    }
+  </style>
+</head>
+<body></body>
+  <div id="embed-iframe"></div>
+  <script src="https://open.spotify.com/embed/iframe-api/v1" async>
+  </script>
+  <script type="text/javascript">
+    window.onSpotifyIframeApiReady = (IFrameAPI) => {
+      const element = document.getElementById('embed-iframe');
+      const options = {
+        width: '100%',
+        height: '160',
+        uri: 'spotify:episode:7makk4oTQel546B0PZlDM5'
+      };
+      const callback = (EmbedController) => {
+        document.querySelectorAll('.episode').forEach(
+          episode => {
+            episode.addEventListener('click', () => {
+              EmbedController.loadEntity(episode.dataset.spotifyId)
+            });
+          })
+      };
+      IFrameAPI.createController(element, options, callback);
+    };
+  </script>
+</body>
+</html>
+<img src="noway.png" class="spiderman-corner" alt="Spider-Man">
 </body>
 </html>
