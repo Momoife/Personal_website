@@ -53,8 +53,6 @@ p {
 }
 
 
-/* BLUE RETRO TITLE BAR */
-
 .retro-title {
     height: 36px;
 
@@ -73,7 +71,6 @@ p {
 }
 
 
-/* SPOTIFY AREA */
 
 .retro-screen {
     padding: 12px;
@@ -82,8 +79,6 @@ p {
 }
 
 
-/* IMPORTANT:
-   Don't give this a height or huge padding */
 
 #embed-iframe {
     width: 100%;
@@ -91,7 +86,7 @@ p {
 }
 
 
-/* EPISODE BUTTONS */
+
 
 .episodes {
     display: flex;
@@ -137,7 +132,6 @@ p {
 }
 
 
-/* DESKTOP */
 
 @media screen and (min-width: 860px) {
 
